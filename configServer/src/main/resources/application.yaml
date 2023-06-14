@@ -1,0 +1,20 @@
+server:
+  port: 8888  # Port number for the server
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jubayer456/jhokomariConfigRepo # Config Server Git Configuration
+          username: jubayer456
+          password: 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
+  
+  # Eureka Configuration
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+
